@@ -19,7 +19,7 @@
 	};
 
 	async function handleSignUp() {
-		const response = await fetch(`${PUBLIC_BACKEND_USER}`, {
+		const response = await fetch(`http://localhost:9090/api/users/register`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -36,7 +36,7 @@
 	}
 
 	async function handleSignIn() {
-		const response = await fetch(`${PUBLIC_BACKEND_AUTH}`, {
+		const response = await fetch(`http://localhost:9090/api/auth/login`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
