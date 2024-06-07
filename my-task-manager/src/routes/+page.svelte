@@ -1,6 +1,5 @@
 <script>
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import { PUBLIC_BACKEND_USER, PUBLIC_BACKEND_AUTH } from '$env/static/public';
 
 	let showSignUpForm = false;
 	let showSignInForm = false;

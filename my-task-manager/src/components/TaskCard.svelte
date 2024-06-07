@@ -79,7 +79,7 @@
         Status:
         <select bind:value={updatedTask.status}>
           <option value="Pending">Pending</option>
-          <option value="InProgress">In Progress</option>
+          <option value="InProgress">InProgress</option>
           <option value="Completed">Completed</option>
         </select>
       </label>
@@ -93,7 +93,7 @@
     <p>Due: {task.dueDate}</p>
     <p>Status: {task.status}</p>
 
-    <button on:click={() => isEditing = true}>Update</button>
+    <button on:click={() => { isEditing = true; updatedTask = { ...task }; }}>Update</button>
     <button on:click={handleDelete}>Delete</button>
   {/if}
 </div>
